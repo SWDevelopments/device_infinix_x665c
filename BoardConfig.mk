@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-X665C
+DEVICE_PATH := device/infinix/x665c
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -36,7 +36,7 @@ TARGET_USES_64_BIT_BINDER := true
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := Infinix-X665C
+TARGET_BOOTLOADER_BOARD_NAME := x665c
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -54,8 +54,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := Infinix-X665C_defconfig
-TARGET_KERNEL_SOURCE := kernel/infinix/Infinix-X665C
+TARGET_KERNEL_CONFIG := x665c_defconfig
+TARGET_KERNEL_SOURCE := kernel/infinix/x665c
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true

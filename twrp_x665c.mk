@@ -8,14 +8,14 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from Infinix-X665C device
-$(call inherit-product, device/infinix/Infinix-X665C/device.mk)
+# Inherit from x665c device
+$(call inherit-product, device/infinix/x665c/device.mk)
 
-PRODUCT_DEVICE := Infinix-X665C
-PRODUCT_NAME := omni_Infinix-X665C
+PRODUCT_DEVICE := x665c
+PRODUCT_NAME := twrp_x665c
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X665C
 PRODUCT_MANUFACTURER := infinix
@@ -25,4 +25,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-infinix
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vnd_x665c_h6126-user 12 SP1A.210812.016 285930 release-keys"
 
-BUILD_FINGERPRINT := Infinix/X665C-OP/Infinix-X665C:12/SP1A.210812.016/230328V781:user/release-keys
+BUILD_FINGERPRINT := Infinix/X665C-OP/x665c:12/SP1A.210812.016/230328V781:user/release-keys

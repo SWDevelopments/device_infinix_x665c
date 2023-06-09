@@ -1,4 +1,4 @@
-# Android device tree for Infinix Infinix X665C (Infinix-X665C)
+# Android device tree for Infinix Infinix X665C (x665c)
 
 ```
 #
